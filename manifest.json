@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Hankyung List Viewer",
+  "version": "0.2.0",
+  "action": {},
+  "icons":{"128": "icon.png"},
+  "description": "Improved experience on Korean Economic Daily's list viewing",
+  "content_scripts": [{
+    "css": ["style.css"],
+    "js": ["content.js"],
+    "matches": ["https://plus.hankyung.com/apps/*"]
+  }],
+  "permissions":["activeTab"]
+}
